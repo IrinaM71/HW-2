@@ -1,13 +1,13 @@
 import Goods from "./Goods";
 
 function ShopingList({ goods }) {
-  if (Goods.length === 0) {
+  if (goods.length === 0) {
     return <p>Список покупок пуст</p>;
   }
 
   return (
     <ul>
-      {Goods.map((goods, index) => {
+      {goods.map((goods, index) => {
         return <Goods key={index} goods={goods} />;
       })}
     </ul>

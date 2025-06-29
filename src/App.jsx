@@ -7,7 +7,8 @@ function App() {
   return (
     <>
       <Greeting name="Ирина" />
-      <ShopingList Goods={goods} />
+      <h2>Мой список покупок</h2>
+      <ShopingList goods={goods} />
     </>
   );
 }
