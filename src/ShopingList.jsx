@@ -1,17 +1,17 @@
 import Goods from "./Goods";
 
-function ShopingList({ goods })
+function ShopingList({ Goods }) {
 if (Goods.length === 0) {
   return  <p>Список покупок пуст</p>
 };
 else {
-    //return(
+    return(
     <ul>
         {Goods.map((goods, index) => {
             return <Goods key={index} goods={goods} />
         })}
-    </ul>;
-//); 
+    </ul>
+); 
 } 
-
+}
 export default ShopingList;
