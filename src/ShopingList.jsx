@@ -7,9 +7,9 @@ function ShopingList({ goods }) {
 
   return (
     <ul>
-      {goods.map((goods, index) => {
-        return <Goods key={index} goods={goods} />;
-      })}
+      {goods.map((goods, index) => (
+        <li key={index}>{goods}</li>
+      ))}
     </ul>
   );
 }

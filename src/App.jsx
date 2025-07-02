@@ -15,8 +15,8 @@ function App() {
       <Greeting name="Ирина" />
       <h2>Мой список покупок</h2>
       <ShopingList goods={goods} />
-      <h2>Статусы заказов</h2>
 
+      <h2>Статусы заказов</h2>
       {orders.map((order) => (
         <OrderStatus
           key={order.orderId}

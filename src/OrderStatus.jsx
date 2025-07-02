@@ -1,15 +1,13 @@
-//function OrderStatus({ order }) {
-//if ((order = [])) {
-//return <p>Нет заказов</p>;
-//}
-
-const OrderStatus = ({ orderId, status }) => {
-  return (
-    <p>
-      Заказ #{orderId}: {status}
-    </p>
-  );
-};
-//}
+function OrderStatus({ orderID, status }) {
+  if ((orderID = [])) {
+    return <p>Нет заказов</p>;
+  } else {
+    return (
+      <p>
+        Заказ #{orderId}: {status}
+      </p>
+    );
+  }
+}
 
 export default OrderStatus;
